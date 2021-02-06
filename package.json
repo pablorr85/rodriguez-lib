@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
+    "build:app": "npm run build && cp -r dist/ ../rodriguez-app/node_modules/rodriguez-lib/",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
@@ -61,6 +62,7 @@
     "dist"
   ],
   "dependencies": {
+    "@types/styled-components": "^5.1.7",
     "core-js": "^3.8.3"
   }
 }
