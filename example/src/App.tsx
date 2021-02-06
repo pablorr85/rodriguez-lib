@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'rodriguez-lib'
+import { Dropdown } from 'rodriguez-lib'
 import 'rodriguez-lib/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Dropdown title="My Dropdown" items={["hola", "adios"]} />
 }
 
 export default App
